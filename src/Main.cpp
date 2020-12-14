@@ -41,7 +41,7 @@ int main(const int argc, char* argv)
 		.pApplicationName = "Vulkan Application",
 		.applicationVersion = VK_MAKE_VERSION(0, 0, 1),
 		.pEngineName = "No Engine",
-		.pEngineVersion = VK_MAKE_VERSION(0, 0, 1),
+		.engineVersion = VK_MAKE_VERSION(0, 0, 1),
 		.apiVersion = VK_API_VERSION_1_0,
 	};
 
