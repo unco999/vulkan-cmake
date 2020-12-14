@@ -7,7 +7,7 @@
 static constexpr unsigned int g_WindowWidth = 800u;
 static constexpr unsigned int g_WindowHeight = 600u;
 
-int main(const int argc, char* argv)
+int main(const int argc, char* argv[])
 {
 	// Initialise SDL2.
 	if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
