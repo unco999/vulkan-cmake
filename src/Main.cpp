@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 
+#include <glm/glm.hpp>
 #include <SDL2/SDL.h>
 #include <vulkan/vulkan.h>
 

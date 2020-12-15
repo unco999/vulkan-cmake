@@ -15,8 +15,11 @@ if(WIN32)
 	set(SDL2_DIR "${PROJECT_SOURCE_DIR}/dep/SDL2-2.0.12/cmake")
 endif()
 
+set(GLM_DIR "${PROJECT_SOURCE_DIR}/dep/glm-0.9.9.8/cmake")
+
 find_package(SDL2 REQUIRED)
 find_package(Vulkan REQUIRED)
+find_package(GLM REQUIRED)
 
 if(NOT Vulkan_FOUND)
 	message(FATAL_ERROR  "Vulkan could not be found.")
@@ -41,6 +44,7 @@ target_include_directories(Vulkan PUBLIC
 	${CMAKE_CURRENT_LIST_DIR}/include
 	${SDL2_INCLUDE_DIRS}
 	${Vulkan_INCLUDE_DIR}
+	${GLM_INCLUDE_DIRS}
 )
 
 target_link_directories(Vulkan PUBLIC ${SDL2_LIBS_DIR})
